@@ -21,6 +21,9 @@ export default defineConfig({
     }),
     mkcert(),
   ],
+  build: {
+    target: 'esnext',
+  },
   test: {
     globals: true,
     reporters: ['default', 'html'],

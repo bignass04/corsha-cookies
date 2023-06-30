@@ -4,3 +4,4 @@
 3. Install the dependencies `yarn install`
 4. Start the application `yarn dev`
 5. Run unit tests `yarn test`
+6. To check for prod build, run `yarn build`
