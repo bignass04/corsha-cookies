@@ -1,4 +1,5 @@
 import React from 'react'
+import '@testing-library/jest-dom'
 import { render, act, screen } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
 import Router from '.'
@@ -19,8 +20,7 @@ describe('Router', () => {
         </BrowserRouter>
       )
     })
-    expect(await screen.findByText('defunkt', undefined, { timeout: 3000 })).toBeInTheDocument()
-    expect(await screen.findByAltText('avatar for user defunkt')).toBeInTheDocument()
+    expect(await screen.findByLabelText('Choose Cookies', undefined, { timeout: 3000 })).toBeInTheDocument()
     expect(comp.container).toMatchSnapshot()
   })
 })

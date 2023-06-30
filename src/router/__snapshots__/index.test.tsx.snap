@@ -3,114 +3,107 @@
 exports[`Router > renders users on the page 1`] = `
 <div>
   <main>
-    <h1>
-      All Github Users
-    </h1>
+    <form>
+      <label>
+        Choose Cookies
+        <select
+          name="cookieType"
+        >
+          <option
+            value="chocolate"
+          >
+            Chocolate Chip
+          </option>
+          <option
+            value="shortbread"
+          >
+            Shortbread
+          </option>
+          <option
+            value="macaroon"
+          >
+            Macaroon
+          </option>
+        </select>
+      </label>
+      <label>
+        Quantity
+        <select
+          name="cookieQuantity"
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+          <option
+            value="4"
+          >
+            4
+          </option>
+          <option
+            value="5"
+          >
+            5
+          </option>
+        </select>
+      </label>
+      <div
+        class="button-wrapper"
+      >
+        <button>
+          Add Cookies
+        </button>
+        <button
+          class="second-button"
+        >
+          Remove Cookies
+        </button>
+      </div>
+    </form>
     <section
-      class="users-list"
+      class="cookie-display"
     >
-      <ul>
-        <li
-          class="list-item home-user-list"
+      <div>
+        <span>
+          Chocolate Chip:
+        </span>
+        <span
+          data-testid="chocolateChip"
         >
-          <a
-            class="app-link user-list-name-image"
-            href="/user/detail/defunkt"
-            target="_self"
-          >
-            <img
-              alt="avatar for user defunkt"
-              class="avatar-image"
-              src="https://avatars.githubusercontent.com/u/2?v=4"
-            />
-            <div
-              class="user-list-login-name"
-            >
-              defunkt
-            </div>
-          </a>
-        </li>
-        <li
-          class="list-item home-user-list"
+          0
+        </span>
+      </div>
+      <div>
+        <span>
+          Shortbread:
+        </span>
+        <span
+          data-testid="shortbread"
         >
-          <a
-            class="app-link user-list-name-image"
-            href="/user/detail/ezmobius"
-            target="_self"
-          >
-            <img
-              alt="avatar for user ezmobius"
-              class="avatar-image"
-              src="https://avatars.githubusercontent.com/u/5?v=4"
-            />
-            <div
-              class="user-list-login-name"
-            >
-              ezmobius
-            </div>
-          </a>
-        </li>
-        <li
-          class="list-item home-user-list"
+          0
+        </span>
+      </div>
+      <div>
+        <span>
+          Macaroon:
+        </span>
+        <span
+          data-testid="macaroon"
         >
-          <a
-            class="app-link user-list-name-image"
-            href="/user/detail/mojombo"
-            target="_self"
-          >
-            <img
-              alt="avatar for user mojombo"
-              class="avatar-image"
-              src="https://avatars.githubusercontent.com/u/1?v=4"
-            />
-            <div
-              class="user-list-login-name"
-            >
-              mojombo
-            </div>
-          </a>
-        </li>
-        <li
-          class="list-item home-user-list"
-        >
-          <a
-            class="app-link user-list-name-image"
-            href="/user/detail/pjhyett"
-            target="_self"
-          >
-            <img
-              alt="avatar for user pjhyett"
-              class="avatar-image"
-              src="https://avatars.githubusercontent.com/u/3?v=4"
-            />
-            <div
-              class="user-list-login-name"
-            >
-              pjhyett
-            </div>
-          </a>
-        </li>
-        <li
-          class="list-item home-user-list"
-        >
-          <a
-            class="app-link user-list-name-image"
-            href="/user/detail/wycats"
-            target="_self"
-          >
-            <img
-              alt="avatar for user wycats"
-              class="avatar-image"
-              src="https://avatars.githubusercontent.com/u/4?v=4"
-            />
-            <div
-              class="user-list-login-name"
-            >
-              wycats
-            </div>
-          </a>
-        </li>
-      </ul>
+          0
+        </span>
+      </div>
     </section>
   </main>
 </div>

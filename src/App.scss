@@ -23,7 +23,7 @@ p, ul {
 }
 
 main, footer {
-  margin: 0 30px 30px 30px;
+  margin: 30px;
   @media screen and (min-width: $medium-breakpoint) {
     width: 70%;
   }

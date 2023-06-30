@@ -1,0 +1,33 @@
+label {
+  font-size: 18px;
+  display: block;
+  select {
+    margin-left: 8px;
+  }
+}
+
+.second-button {
+  margin-left: 8px;
+}
+
+.button-wrapper {
+  margin: 10px 0;
+}
+
+.cookie-display {
+  border-top: solid 1px #000;
+  margin-top: 12px;
+  padding-top: 12px;
+
+  div {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 120px auto;
+  }
+}
+
+.field-wrapper {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: auto 1fr;
+}
