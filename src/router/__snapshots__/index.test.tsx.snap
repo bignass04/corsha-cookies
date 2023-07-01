@@ -4,60 +4,64 @@ exports[`Router > renders users on the page 1`] = `
 <div>
   <main>
     <form>
-      <label>
-        Choose Cookies
-        <select
-          name="cookieType"
-        >
-          <option
-            value="chocolate"
+      <div
+        class="field-wrapper"
+      >
+        <label>
+          Choose Cookies
+          <select
+            name="cookieType"
           >
-            Chocolate Chip
-          </option>
-          <option
-            value="shortbread"
+            <option
+              value="chocolate"
+            >
+              Chocolate Chip
+            </option>
+            <option
+              value="shortbread"
+            >
+              Shortbread
+            </option>
+            <option
+              value="macaroon"
+            >
+              Macaroon
+            </option>
+          </select>
+        </label>
+        <label>
+          Quantity
+          <select
+            name="cookieQuantity"
           >
-            Shortbread
-          </option>
-          <option
-            value="macaroon"
-          >
-            Macaroon
-          </option>
-        </select>
-      </label>
-      <label>
-        Quantity
-        <select
-          name="cookieQuantity"
-        >
-          <option
-            value="1"
-          >
-            1
-          </option>
-          <option
-            value="2"
-          >
-            2
-          </option>
-          <option
-            value="3"
-          >
-            3
-          </option>
-          <option
-            value="4"
-          >
-            4
-          </option>
-          <option
-            value="5"
-          >
-            5
-          </option>
-        </select>
-      </label>
+            <option
+              value="1"
+            >
+              1
+            </option>
+            <option
+              value="2"
+            >
+              2
+            </option>
+            <option
+              value="3"
+            >
+              3
+            </option>
+            <option
+              value="4"
+            >
+              4
+            </option>
+            <option
+              value="5"
+            >
+              5
+            </option>
+          </select>
+        </label>
+      </div>
       <div
         class="button-wrapper"
       >

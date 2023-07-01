@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import './Home.scss'
+import { type } from 'os'
 
 type CookieDropdown = {
   label: string
@@ -13,10 +14,8 @@ type CookieList = {
   macaroon: number
 }
 
-interface FieldValues {
-  cookieType: {
-    [index: string]: string
-  }
+type FieldValues = {
+  cookieType: string
   cookieQuantity: string
 }
 
@@ -46,7 +45,7 @@ const HomePage = (): React.ReactElement => {
     fetchData()
   }, [])
 
-  const addToOrder: SubmitHandler<any> = ({ cookieType, cookieQuantity }): void => {
+  const addToOrder: SubmitHandler<FieldValues> = ({ cookieType, cookieQuantity }): void => {
     const currentCookieQty = masterOrder[cookieType]
     setMasterOrder({
       ...masterOrder,
@@ -54,7 +53,7 @@ const HomePage = (): React.ReactElement => {
     })
   }
 
-  const removeFromOrder: SubmitHandler<any> = ({ cookieType }): void => {
+  const removeFromOrder: SubmitHandler<FieldValues> = ({ cookieType }): void => {
     setMasterOrder({
       ...masterOrder,
       [cookieType]: 0
