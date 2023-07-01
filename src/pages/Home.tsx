@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import './Home.scss'
-import { type } from 'os'
 
 type CookieDropdown = {
   label: string
